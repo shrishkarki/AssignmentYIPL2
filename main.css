@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,800&display=swap');
+:root {
+    --tertiary-dark:#458FF6;
+    --tertiary-light:#7D7987;
+    --grey-dark:#1F1534;
+    --blue-dark:#5393F3;
+  }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

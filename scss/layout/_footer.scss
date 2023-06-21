@@ -1,0 +1,50 @@
+
+footer{
+    position: relative;
+    z-index: 10;
+    &::before{
+        content: " ";
+        background-image: url("../../img/bulkDots.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 10rem;
+        height: 7rem;
+        position: absolute;
+        right: 3rem;
+       
+        transform: translateY(-60%);
+        
+
+        z-index:-10;
+        display: none;
+        @include media-query($laptops){
+            display: block;
+        }
+       
+
+    }
+
+    &::after{
+        content: " ";
+        background-image: url("../../img/footerLeft.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 8rem;
+        height: 6rem;
+        position: absolute;
+        // bottom: 0;
+        display: none;
+        transform: translateY(-100%);
+
+        @include media-query($laptops){
+            display: block;
+        }
+    }
+}
+.footer-container{
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    // position: relative;
+    // z-index: 10;
+
+    
+}

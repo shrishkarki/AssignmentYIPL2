@@ -1,0 +1,90 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.feedback {
+  position: relative;
+  z-index: 10;
+}
+.feedback::before {
+  content: " ";
+  background-image: url("../../img/GroupDots.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 7rem;
+  position: absolute;
+  right: -1rem;
+  transform: translate(0, -20%);
+  display: none;
+}
+@media (min-width: 992px) {
+  .feedback::before {
+    display: block;
+  }
+}
+.feedback::after {
+  content: " ";
+  background-image: url("../../img/bulkDots.png");
+  width: 10rem;
+  height: 7rem;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 5rem;
+  transform: translateX(-30%);
+  z-index: -10;
+  display: none;
+}
+@media (min-width: 992px) {
+  .feedback::after {
+    display: block;
+  }
+}
+
+.carousel {
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+}
+
+footer {
+  position: relative;
+  z-index: 10;
+}
+footer::before {
+  content: " ";
+  background-image: url("../../img/bulkDots.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10rem;
+  height: 7rem;
+  position: absolute;
+  right: 3rem;
+  transform: translateY(-60%);
+  z-index: -10;
+  display: none;
+}
+@media (min-width: 992px) {
+  footer::before {
+    display: block;
+  }
+}
+footer::after {
+  content: " ";
+  background-image: url("../../img/footerLeft.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 8rem;
+  height: 6rem;
+  position: absolute;
+  display: none;
+  transform: translateY(-100%);
+}
+@media (min-width: 992px) {
+  footer::after {
+    display: block;
+  }
+}
+
+.footer-container {
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}/*# sourceMappingURL=main.css.map */
