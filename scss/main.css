@@ -12,13 +12,15 @@ nav ul li a::after {
   position: absolute;
   background-color: #7D7987;
   height: 2px;
-  width: 0;
+  width: 100%;
   bottom: -3px;
   left: 0;
   transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
 }
 nav ul li a:hover::after {
-  width: 100%;
+  transform: scaleX(1);
 }
 
 .feedback {

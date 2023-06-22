@@ -34,7 +34,7 @@ module.exports = {
         },
         gridTemplateColumns: {
           
-          'four-auto': 'auto auto auto auto',
+          'two-auto': '25% 75%',
   
           
         }
