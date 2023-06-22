@@ -1,0 +1,24 @@
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    a{
+       
+        
+        &::after{
+            content: " ";
+            position: absolute;
+            background-color: #7D7987;
+            height: 2px;
+            width: 0;
+            bottom: -3px;
+             left: 0;
+             transition: 0.3s;  
+        }
+        &:hover::after{
+            width: 100%;
+         }
+        
+    }
+}

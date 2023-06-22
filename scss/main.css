@@ -2,6 +2,25 @@
   scroll-behavior: smooth;
 }
 
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+nav ul li a::after {
+  content: " ";
+  position: absolute;
+  background-color: #7D7987;
+  height: 2px;
+  width: 0;
+  bottom: -3px;
+  left: 0;
+  transition: 0.3s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
 .feedback {
   position: relative;
   z-index: 10;
