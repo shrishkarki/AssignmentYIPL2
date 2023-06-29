@@ -1,9 +1,9 @@
 * {
-  outline: 1px solid red;
+  scroll-behavior: smooth;
 }
 
-* {
-  scroll-behavior: smooth;
+.ham {
+  transition: all 0.3s ease-in;
 }
 
 nav ul li {
